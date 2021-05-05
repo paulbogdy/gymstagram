@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}
+Profile
+{% endblock %}
+{% block body %}
+<div class="topnav">
+    <a class="fill-button" href="{{ url_for('main.profile') }}">Profile</a>
+    <a class="fill-button" href="{{ url_for('main.workouts') }}">Workouts</a>
+    <a class="fill-button active" href="{{ url_for('main.exercises') }}">Exercises</a>
+    <a class="fill-button" href="{{ url_for('main.measurements') }}">Measurements</a>
+    <a class="fill-button" href="{{ url_for('main.profile') }}">Logout</a>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}
+Login
+{% endblock %}
+{% block body %}
+<div class="login box">
+    <div class="container">
+        <h1>Gymstagram 🏋</h1>
+    </div>
+    <form action="/login", method="POST">
+        <div class="container">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" class="fill-button" value="Login">
+        </div>
+    </form>
+    <div class="container">
+        <p>Don't have an account? <a href="{{ url_for('auth.register') }}">Sign Up</a></p>
+    </div>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="container flashed"> {{ messages[0] }} </div>
+    {% endif %}
+    {% endwith %}
+</div>
+{% endblock %}

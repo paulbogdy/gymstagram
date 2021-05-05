@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: orange;
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+}
+
+.container input, button {
+    background-color: black;
+    color:white;
+    border: 3px solid white;
+    padding: 6px;
+    margin: 10px;
+    width: 90%;
+}
+
+.container a {
+    color: white;
+    font-weight: bold;
+}
+
+.login {
+    height: 390px;
+}
+
+.register {
+    height: 450px;
+}
+
+.login, .register {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    border: 3px solid white;
+}
+
+.flashed {
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: orange;
+}
+
+.topnav a{
+    float: left;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    margin:5px;
+    border:3px solid white;
+}
+
+.fill-button {
+    background: linear-gradient(to left, black 50%, orange 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.fill-button:hover {
+    background-position: left;
+}
+
+.topnav a.active{
+    background: none;
+    background-color: orange;
+}
+
+.profile {
+    background-color: orange;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+
